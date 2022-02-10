@@ -1,0 +1,39 @@
+form{
+    border: 1px solid orange;
+    background-color: orange;
+    /* width: 30%;
+    height: 30vh; */
+    text-align: center;
+    /* margin: 10% auto; */
+    
+
+}
+input[type=submit]:hover {
+    background-color:brown;
+}
+.a:hover{
+    background-color: green;
+}
+.b:hover{
+    background-color: yellow;
+}
+.c:hover{
+    background-color: red;
+}
+
+input{
+    margin-top: 2%;
+    height: 7vh;
+    width: 20%;
+}
+legend{
+    background-color: orangered;
+    margin-left: 45%;
+}
+.env{
+    font-size: 2em;
+}
+body{
+    background-image: url(sene.jpg);
+   
+}
