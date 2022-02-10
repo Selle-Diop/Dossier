@@ -6,7 +6,7 @@ function carre (int $cote):void
     $resultDiagonale = sqrt(2*pow($cote,2));
     echo 'le perimetre est' .$resultPerimetre. '</br>';
     echo 'la surface est' .$resultSurface. '</br>';
-    echo 'la diagonale est' .$resultDiagonale. '</br>';
+    echo 'la diago est' .$resultDiagonale. '</br>';
 
 }
 
