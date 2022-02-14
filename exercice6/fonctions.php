@@ -47,8 +47,8 @@ function champ_Valid($a):bool
     return nombrenumerique($a) && !empty($a);
 }
 
-function estVide($n):bool{
-    return empty($n);
+function estVide($n):bool{ 
+    return empty($n); 
 }
 function estNum($n){
     return is_numeric($n);
@@ -61,4 +61,4 @@ function estValide($n,string $key,array &$err):void{
             $err[$key]="veuillez saisir une valeur numerique";
         }
     }
-}
+} 

@@ -1,7 +1,9 @@
 <?php
+session_start(); 
+
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,13 +13,27 @@
 </head>
 <body>
     <form action="controleur.php" method="post">
-        <label for="jour">Veuillez saisir le jour</label>:
-            <input type="text" name="jour" id="jour">
-            <label for="mois">Veuillez saisir le mois</label>:
-            <input type="text" name="mois" id="mois">
-            <label for="annee">Veuillez saisir l'annee</label>:
-            <input type="text" name="annee" id="annee">
-            <input type="submit" name="envoyer" value="Envoyer">
+        <label for="jour"><span class="jour">Veuillez saisir le jour</span></label>:
+            <input type="text" class="jour" name="jour" id="jour" value="<?php if(!isset($_SESSION['error']['jour']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['jour']; else echo '';  ?>" >
+            <?php if(isset($_SESSION['error']['jour'])):?>
+            <p style="color:red"><?php echo $_SESSION['error']['jour'] ?></p>
+            <?php endif?>
+            
+            
+            
+
+            <label for="mois"><span class="mois">Veuillez saisir le mois</span></label>:
+            <input type="text"class="mois"  name="mois" id="mois" value="<?php if(!isset($_SESSION['error']['mois']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['mois']; else echo '';  ?>"> 
+            <?php if(isset($_SESSION['error']['mois'])):?>
+            <p style="color:red"><?php echo $_SESSION['error']['mois']; ?></p>
+            <?php endif?>
+            <label for="annee"><span class="annee">Veuillez saisir l'annee</span></label>:
+            <input type="text" class="annee" name="annee" id="annee" value="<?php if(!isset($_SESSION['error']['mois']) && isset($_SESSION['post']) ) echo  $_SESSION['post']['annee']; else echo '';  ?>">
+            <?php if(isset($_SESSION['error']['annee'])):?>
+            <p style="color:red"><?php echo $_SESSION ['error']['annee'] ; ?></p>
+            <?php endif?>
+
+            <input type="submit" class="env" name="envoyer" value="Envoyer">
 
 
 
@@ -26,3 +42,10 @@
     
 </body>
 </html>
+
+<?php 
+if(isset($_SESSION['error'])){
+    unset($_SESSION['error']);
+}
+
+?>

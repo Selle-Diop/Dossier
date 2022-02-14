@@ -8,4 +8,4 @@ function permutation($a,$b){
         echo "le nombre apres la permutation est :" .$a. "et" .$b. "<br>";
     }
     
-}
+} 

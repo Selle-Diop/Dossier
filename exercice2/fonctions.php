@@ -1,12 +1,13 @@
-function addition ($a,$b)
+<?php
+function add ($a,$b)
 {
-    $resultadd = $a + $b;
-    echo $resultadd;
+    $resultadd = ($a + $b)*2;
+    echo $resultadd; 
 }
 function difference ($a,$b)
 {
     $resultdiff  = $a - $b;
-    echo $resultdiff;
+    echo $resultdiff; 
 
 }
 function expo ($n)
@@ -26,10 +27,11 @@ function division ($a,$b)
         
     }
 }
-function modulo ($a,$b)
+function modulo ($a,$b){ 
 if(a>0 && b>0){
     $resultmod = $a%$b;
     echo $resultmod;
+}
 }
 function carre ($a,$b) {
     $resultcarre = pow($a,2)+ pow ($b,2);

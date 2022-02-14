@@ -8,16 +8,17 @@ function dateprecedente ($an,$mois,$jour) {
             $jour=nombrejour($an,$mois-1);
             if($mois==1){
                 $mois=12;
-                $an--;
+                $an--; 
             }
-            else{
+            else{ 
                 $mois--;
             }
         }
+        
 
     
 }
-echo "la date precedente est :" .$jour."/".$mois."/".$an ;
+echo "la date precedente est :" .$jour."/".$mois."/".$an. "<br>" ;
 }
 
 function datesuivante ($an,$mois,$jour){
@@ -83,6 +84,21 @@ function nombrejour ($an,$mois) : int
     }
     return $nbjr;
 }
+function estVide($n):bool{
+    return empty($n);
+}
+function estNum($n){
+    return is_numeric($n);
+}
+function estValide($n,string $key,array &$erreur):void{
+    if(estVide($n)){
+        $erreur[$key]="veuillez saisir une valeur";
+    }else {
+        if(!estNum($n)){
+            $erreur[$key]="veuillez saisir une valeur numerique";
+        }
+    }
+} 
 
 
 

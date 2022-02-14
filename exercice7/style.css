@@ -1,0 +1,42 @@
+form
+{
+    text-align: center;
+}  
+input{
+    margin:auto 0;
+    margin-top: 4%;
+    height: 7vh;
+    width: 20%;
+}
+body{
+    background-image: url(sene.jpg);
+    background-size: cover;
+}
+.jour:hover{
+    background-color: green;
+}
+.mois:hover{
+    background-color: yellow;
+}
+.annee:hover{
+    background-color: red;
+}
+.env{
+ margin-left: 12%;
+ margin-top: 5%;
+}
+.mois{
+    color: black;
+    font-size: 1.5em;
+}
+.jour{
+    color: black;
+    font-size: 1.5em;
+}
+.annee{
+    color: black;
+    font-size: 1.5em;
+}
+p{
+    font-size: 2em;
+}

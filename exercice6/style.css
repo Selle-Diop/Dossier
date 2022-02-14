@@ -1,6 +1,6 @@
 form{
     border: 1px solid orange;
-    background-color: orange;
+    background-color: rgb(199, 64, 64);
     /* width: 30%;
     height: 30vh; */
     text-align: center;
@@ -9,7 +9,7 @@ form{
 
 }
 input[type=submit]:hover {
-    background-color:brown;
+    background-color:brown; 
 }
 .a:hover{
     background-color: green;

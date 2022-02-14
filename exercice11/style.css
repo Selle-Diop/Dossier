@@ -1,0 +1,10 @@
+table,td{
+    border: 2px solid red;
+    border-collapse: collapse;
+    line-height: 170%;
+    
+}
+body{
+    display: flex;
+    justify-content: space-around;
+}
